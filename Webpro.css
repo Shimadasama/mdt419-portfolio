@@ -1,0 +1,132 @@
+/* Main.css for portfolio */
+body
+{
+    background-color: rgb(44, 44, 44);
+    background-image: url("pic/hdrp_siam.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    color: white;    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 90px;
+    margin-right: 90px;
+}
+
+h1
+{
+    color: rgb(255, 0, 85);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 45px;
+}
+
+h2
+{
+    color:rgb(245, 114, 39);
+    font-family:monospace;
+}
+
+h3
+{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 22px;
+}
+
+h4
+{
+    color: rgb(154, 238, 18);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 22px;
+}
+
+h5
+{
+    font-size: 18px;
+}
+
+ul
+{
+    font-size: 17px;
+}
+
+#showcase-pic
+{
+    width: 75%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.middle-page
+{
+    text-align: center;
+}
+
+.text-left-align
+{
+    text-align: left;
+}
+
+/* grid display */
+.grid-container
+{
+    display: grid;
+    grid-template-columns: 15% auto 15%;
+    grid-column-gap: 30px;
+    grid-row-gap: 50px;
+}
+
+.grid-container > div
+{
+    font-size: 20px;
+    text-align: center;
+} 
+
+#header
+{
+    grid-column: 1 / span 3;
+    animation: 0.5s ease-out 0s 1 SlideInFromLeft;
+}
+
+#menu
+{
+    grid-column: 1 / span 1;
+}
+
+#main
+{
+    grid-column: 2 / span 1;
+    animation: 0.5s ease-out 0s 1 SlideInFromBottom;
+}
+
+#right
+{
+    grid-column: 3 / span 1;
+}
+
+#footer
+{
+    grid-column: 2 / span 1;
+    animation: 0.5s ease-out 0s 1 SlideInFromBottom;
+} 
+
+#icon-pics
+{
+    border-radius: 50%;   
+    position: relative;
+    width: 175px;     
+    height: 175px;
+    overflow: hidden;
+    margin: 10px;
+}
+
+@keyframes SlideInFromLeft
+{
+    0% {transform: translateX(-100%);}
+    100% {transform: translateX(0%);}
+}
+
+@keyframes SlideInFromBottom
+{
+    0% {transform: translateY(100%);}
+    100% {transform: translateY(0%);}
+}
